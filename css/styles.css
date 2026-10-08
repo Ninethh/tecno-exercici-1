@@ -18,7 +18,8 @@ p {
 }
 
 body {
-  background-color: var(--orange);
+  margin: 0;
+  padding: 0;
 }
 
 /*Aquest estil es de prova, no es necessari per al projecte final.
@@ -29,9 +30,10 @@ body {
 
 .hero {
   padding: 67px;
+  background: linear-gradient(180deg, #fcb782 85%, #fff 85%, #fff 100%);
 }
 .container {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   width: 1312px;
   margin: auto;
@@ -39,7 +41,8 @@ body {
 
 .colum {
   width: 50%;
-  border: 1px solid red;
+  position: relative;
+  /* border: 1px solid red;*/
 }
 
 .heading-box {
@@ -87,6 +90,25 @@ body {
   align-items: center;
   gap: 9px;
   margin-bottom: 9px;
+}
+
+.shape {
+  position: absolute;
+  right: 0;
+  width: 580px;
+  height: 790px;
+  border-radius: 0 0 400px 400px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  z-index: 0;
+}
+
+.toy {
+  position: relative;
+  z-index: 1;
 }
 
 .card-title i {
